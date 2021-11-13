@@ -8,7 +8,7 @@
 
 body {
   color: var(--primery-text-color);
-  font-family: Roboto sans-serif;
+  font-family: roboto;
 }
 
 .list {
@@ -49,6 +49,11 @@ ul {
   padding-right: 15px;
   padding-left: 15px;
   margin: 0 auto;
+}
+
+.section {
+  padding-top: 94px;
+  padding-bottom: 94px;
 }
 
 /* ..........................header .........................*/
@@ -131,17 +136,15 @@ ul {
 
 .hero {
   background-color: var(--background-color);
-}
-
-.hero-container {
   padding-top: 200px;
   padding-bottom: 200px;
-  /* text-align: center; */
+  text-align: center;
 }
 
 .hero-title {
   width: 696px;
-  margin: 0px auto 30px;
+  margin-right: auto;
+  margin-left: auto;
 
   font-weight: 900;
   font-size: 44px;
@@ -153,11 +156,13 @@ ul {
 }
 
 .hero-button {
-  margin: 0 auto;
-  border: transparent;
-  border-radius: 4px;
+  display: block;
+  margin: 30px auto 0px;
   padding: 10px 32px;
   min-width: 136px;
+  border: transparent;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+  border-radius: 4px;
 
   font-weight: 700;
   font-size: 16px;
@@ -174,7 +179,20 @@ ul {
 
 /* .......................Our Qualities........................... */
 
+.qualities-list {
+  display: flex;
+}
+
+.qualities-item {
+  width: 270px;
+}
+
+.qualities-item:not(:last-child) {
+  margin-right: 30px;
+}
+
 .qualities-second-title {
+  margin-bottom: 10px;
   font-weight: 700;
   font-size: 14px;
   line-height: 1.14;
@@ -192,7 +210,12 @@ ul {
 }
 
 /* .......................What we do........................... */
+.work {
+  padding-top: 0;
+}
+
 .work-title {
+  padding-bottom: 50px;
   font-weight: 700;
   font-size: 36px;
   line-height: 1.17;
@@ -201,15 +224,62 @@ ul {
   color: var(--title-text-color);
 }
 
+.work-list {
+  display: flex;
+}
+
+.work-item {
+  display: block;
+}
+.work-item {
+  margin-right: 30px;
+}
+.work-item:last-child {
+  margin-right: 0;
+}
+
 /* .......................Our Team........................... */
 
+.team {
+  background-color: #f5f4fa;
+}
+
+.team-description {
+  padding-top: 30px;
+  padding-bottom: 30px;
+}
+
+.team-photo {
+  display: block;
+}
+
+.team-name {
+  padding-bottom: 10px;
+}
+
 .team-title {
+  margin-bottom: 50px;
   font-weight: 700;
   font-size: 36px;
   line-height: 1.17;
   text-align: center;
   letter-spacing: 0.03em;
   color: var(--title-text-color);
+}
+
+.team-list {
+  display: flex;
+}
+
+.team-item {
+  box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
+    0px 2px 1px rgba(0, 0, 0, 0.2);
+  border-radius: 0px 0px 4px 4px;
+  background-color: var(--white-color);
+}
+
+.team-item:not(:last-child) {
+  margin-right: 30px;
 }
 
 .team-name {
@@ -235,8 +305,14 @@ ul {
 .footer {
   background-color: var(--background-color);
 }
+.footer-container {
+  padding-top: 60px;
+  padding-bottom: 60px;
+}
 
 .footer-logo {
+  display: block;
+  margin-bottom: 20px;
   font-family: Raleway;
   font-style: normal;
   font-weight: 700;
@@ -247,14 +323,19 @@ ul {
 }
 
 .address {
+  margin-bottom: 9px;
   font-weight: 400;
   font-size: 14px;
   line-height: 1.71;
   letter-spacing: 0.03em;
   color: var(--white-color);
 }
-
+.footer-item:not(:last-child) {
+  margin-bottom: 9px;
+}
 .footer-link {
+  /* display: block;
+  margin-bottom: 9px; */
   font-weight: 400;
   font-size: 14px;
   line-height: 1.71;
@@ -270,8 +351,21 @@ ul {
 
 /* .......................Buttons.......................... */
 
+.portfolio-btn-list {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 34px;
+}
+
+.portfolio-btn-item:not(:last-child) {
+  margin-right: 8px;
+}
+
 .porfolio-button {
   background-color: #f5f4fa;
+  padding: 6px 22px;
+  border: transparent;
+  border-radius: 4px;
   font-style: normal;
   font-weight: 500;
   font-size: 16px;
@@ -288,7 +382,27 @@ ul {
 
 /* .......................List of works......................... */
 
+.portfolio-work-list {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.portfolio-work-item:not(:nth-child(3n)) {
+  margin-right: 30px;
+}
+.portfolio-work-item:not(:nth-last-child(-n + 3)) {
+  margin-bottom: 30px;
+}
+
+.portfolio-img {
+  display: block;
+}
+
+.portfolio-description {
+  padding: 20px 24px;
+}
 .portfolio-works {
+  margin-bottom: 4px;
   font-weight: 700;
   font-size: 18px;
   line-height: 2;
