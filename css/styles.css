@@ -59,6 +59,10 @@ ul {
 /* ..........................header .........................*/
 
 .header {
+  padding-top: 32px;
+  padding-bottom: 32px;
+  border-bottom: 1px solid #ececec;
+
   font-family: Roboto;
   font-weight: 500;
   font-size: 14px;
@@ -71,23 +75,22 @@ ul {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  border-bottom: 1px solid #ececec;
 }
 
 .header-nav {
   display: flex;
+  align-items: center;
 }
 
 .header-logo {
+  margin-right: 91px;
+
   color: var(--title-text-color);
   font-family: Raleway;
   font-weight: 700;
   font-size: 26px;
   line-height: 1.2;
   letter-spacing: 0.03em;
-  padding-top: 24px;
-  padding-bottom: 25px;
-  margin-right: 91px;
 }
 .logo-accent {
   color: var(--accent-text-clor);
@@ -95,8 +98,6 @@ ul {
 
 .header-list {
   display: flex;
-  padding-top: 23px;
-  padding-bottom: 41px;
 }
 
 .header-item:not(:last-child) {
@@ -116,8 +117,6 @@ ul {
 
 .header-cont-list {
   display: flex;
-  padding-top: 32px;
-  padding-bottom: 32px;
 }
 
 .header-cont-item + .header-cont-item {
@@ -213,9 +212,8 @@ ul {
 .work {
   padding-top: 0;
 }
-
 .work-title {
-  padding-bottom: 50px;
+  margin-bottom: 50px;
   font-weight: 700;
   font-size: 36px;
   line-height: 1.17;
@@ -304,8 +302,6 @@ ul {
 
 .footer {
   background-color: var(--background-color);
-}
-.footer-container {
   padding-top: 60px;
   padding-bottom: 60px;
 }
@@ -324,6 +320,7 @@ ul {
 
 .address {
   margin-bottom: 9px;
+  font-style: normal;
   font-weight: 400;
   font-size: 14px;
   line-height: 1.71;
@@ -400,6 +397,9 @@ ul {
 
 .portfolio-description {
   padding: 20px 24px;
+  border-right: 1px solid #eeeeee;
+  border-bottom: 1px solid #eeeeee;
+  border-left: 1px solid #eeeeee;
 }
 .portfolio-works {
   margin-bottom: 4px;
